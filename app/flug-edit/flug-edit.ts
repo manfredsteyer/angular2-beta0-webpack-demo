@@ -2,10 +2,9 @@ import {Component} from 'angular2/core';
 import {RouteParams } from 'angular2/router';
 import {FlugService} from '../services/flug-service';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
-import { DateControl } from '../date-control/date-control';
 @Component({
 	templateUrl: 'app/flug-edit/flug-edit.html',
-	directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, DateControl]
+	directives: [CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class FlugEdit {
 	

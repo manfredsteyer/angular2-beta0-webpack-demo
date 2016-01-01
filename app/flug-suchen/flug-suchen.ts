@@ -7,17 +7,14 @@ import { OrtValidator } from '../validators/ort-validator';
 import { ShowError } from '../validators/show-error';
 import { ROUTER_DIRECTIVES } from 'angular2/router';
 import { FlugCard } from '../flug-card/flug-card';
-//import 'rxjs/add/operator/map';
 import { toTemplateUrl, toAssetUrl } from '../tools/url-tools';
-
-//alert(toAssetUrl(__filename, "logo.jpg"));
 
 @Component({ 
 	selector: 'flug-suchen',
 	// template: require("./flug-suchen.html"), //'app/flug-suchen/flug-suchen.html',
     // templateUrl: toAssetUrl(__filename, "flug-suchen.html"),
     templateUrl: toTemplateUrl(__filename),
-    styles: [require("./flug-suchen.css")],
+    // styles: [require("./flug-suchen.css")],
 	directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, OrtValidator, ShowError, ROUTER_DIRECTIVES, FlugCard],
 	pipes: [OrtPipe]
 })

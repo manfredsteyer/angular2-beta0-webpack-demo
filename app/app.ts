@@ -9,6 +9,7 @@ import { ROUTER_DIRECTIVES, RouteConfig, ROUTER_PROVIDERS, CanActivate } from 'a
 import { Location, HashLocationStrategy, LocationStrategy } from 'angular2/router';
 import { Home } from './home/home';
 import { FlugEdit } from './flug-edit/flug-edit';
+import 'rxjs/add/operator/map';
 
 @Component({
 	selector: 'app',
